@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio Dom eventos</title>
+    <script src="./js/ejercicioDom.js" ></script>
+</head>
+<style>
+    .box{
+        width: 250px;
+        height: 250px;
+        float: left;
+        margin: 20px;
+    }
+    .dashed{
+        border: 3px dashed black;
+        padding: 5px;
+    }
+
+</style>
+<body>
+
+    <!-- 
+        1 formulario con los campos nombre pellido y edad 
+        2 boton para enviar formulario submit
+        3 mostrar esos datos por pantalla 
+        4. tener un boton que al darle clikc nos muestra los datos actuales del formulario 
+     -->
+        <h1>Ejercicio DOM</h1>
+
+     <div class="box">
+
+        <form  action="#" method="POST" id="formulario" onsubmit="return false;"> <br>
+            <input type="text" name="nombre" id="nombre" placeholder="nombre" > <br>
+            <span id="nombreError"></span>
+            <input type="text" name="apellido" id="apellido" placeholder="apellido"> <br>
+            <span id="apellidoError"></span>
+            <input type="number" name="edad" id="edad">
+            <span id="edadError"></span>
+            <br>
+
+            <button type="submit">Enviar</button><br>
+            <button>Mostrar datos actuales</button>
+        </form>
+     </div>
+        
+
+        <div class="dashed box" id="Mostrar">
+            <h3>informacion del ususario</h3>
+            <hr>
+
+        </div>
+</body>
+</html>
