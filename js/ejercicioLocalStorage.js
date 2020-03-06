@@ -22,7 +22,7 @@ form.addEventListener("submit", ()=>{
 
     var pelicula = getPelicula(input);
     divPeliculas.append(pelicula);
-
+    //xd
 
 
 });
